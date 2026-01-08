@@ -1,0 +1,66 @@
+.title {
+    padding: 0 20px;
+}
+
+.section {
+    padding: 0 20px;
+}
+
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.user-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-link-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.user-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-link-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.user-link-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.view-profile {
+    color: #667eea;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-link-card:hover .view-profile {
+    color: #764ba2;
+}
